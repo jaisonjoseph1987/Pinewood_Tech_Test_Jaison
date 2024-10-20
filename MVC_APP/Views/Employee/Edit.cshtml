@@ -1,0 +1,27 @@
+﻿@model MVC_APP.Models.Employee
+@{
+    ViewData["Title"] = "Edit Employee";
+}
+<form action="Edit" method="post">
+    <div class="text-center">
+        <div>
+            <input type="text" id="id" asp-for="Id" hidden />
+            <div class="form-group">
+                <input type="text" id="name" asp-for="Name" placeholder="Name" />
+            </div><br />
+            <div class="form-group">
+                <input type="text" id="surname" asp-for="Surname" placeholder="Surname" />
+            </div><br />
+            <div class="form-group">
+                <input type="text" id="Nationality" asp-for="Nationality" placeholder="Nationality" />
+            </div><br />
+            <div class="form-group">
+                <input type="text" id="Salary" asp-for="Salary" placeholder="Salary" />
+            </div><br />
+
+
+
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+</form>>
